@@ -1,0 +1,53 @@
+=== PII REDACTION EVIDENCE IN RUNTIME LOGS ===
+
+--- Log Record 1 (Event: request_received, Correlation ID: req-e3d5d2cd) ---
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "What is your refund policy? My email is [REDACTED_EMAIL]"
+  },
+  "event": "request_received",
+  "env": "dev",
+  "session_id": "s01",
+  "user_id_hash": "2055254ee30a",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "correlation_id": "req-e3d5d2cd",
+  "level": "info",
+  "ts": "2026-09-29T07:51:05.690934Z"
+}
+
+--- Log Record 2 (Event: request_received, Correlation ID: req-9d0b3d09) ---
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "Here is my phone [REDACTED_PHONE_VN], what should be logged?"
+  },
+  "event": "request_received",
+  "env": "dev",
+  "session_id": "s05",
+  "user_id_hash": "64f6ec689229",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "correlation_id": "req-9d0b3d09",
+  "level": "info",
+  "ts": "2026-09-29T07:51:05.849062Z"
+}
+
+--- Log Record 3 (Event: request_received, Correlation ID: req-f1a98b68) ---
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "What is the policy for PII and credit card [REDACTED_CREDIT_CARD]?"
+  },
+  "event": "request_received",
+  "env": "dev",
+  "session_id": "s09",
+  "user_id_hash": "4d14d5d4f719",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "correlation_id": "req-f1a98b68",
+  "level": "info",
+  "ts": "2026-09-29T07:51:06.795736Z"
+}
+

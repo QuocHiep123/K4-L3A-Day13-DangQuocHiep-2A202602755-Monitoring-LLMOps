@@ -1,0 +1,20 @@
+=== PROMPT ROLLBACK EVIDENCE ===
+Project: day13-k4-l3a-2A202602755
+Prompt: day13-chat
+
+1. Baseline State:
+   - Version 1: labels=['baseline', 'production']
+   - Version 2: labels=['candidate']
+   - Trace ID: b0825171aa12227d9af73bde60b48898 (resolved v1)
+
+2. Promotion Step:
+   - Promote Version 2 to 'production': labels=['candidate', 'production']
+   - Version 1: labels=['baseline']
+   - Trace ID: e7fff6a5b9f1e00e4073293c17b80698 (resolved v2)
+
+3. Rollback Step:
+   - Rollback 'production' label to Version 1: labels=['baseline', 'production']
+   - Version 2: labels=['candidate']
+   - Trace ID: 9e4a8e20c05cee4cc359f582f114c824 (resolved v1)
+
+Rollback successful: Production traffic immediately restored to prompt version 1 without redeploying code.

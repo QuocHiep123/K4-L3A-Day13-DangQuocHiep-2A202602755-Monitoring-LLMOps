@@ -1,0 +1,43 @@
+=== SAMPLE STRUCTURED LOGS (K4-L3A Day 13) ===
+
+1. Event: request_received
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "Can I get help with policy and monitoring?"
+  },
+  "event": "request_received",
+  "env": "dev",
+  "session_id": "s04",
+  "user_id_hash": "75af07890985",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "correlation_id": "req-de61fabc",
+  "level": "info",
+  "ts": "2026-09-29T07:51:03.842005Z"
+}
+
+2. Event: response_sent
+{
+  "service": "api",
+  "latency_ms": 1188,
+  "ttft_ms": 50,
+  "tokens_in": 39,
+  "tokens_out": 147,
+  "cost_usd": 0.002322,
+  "quality_score": 0.9,
+  "tool_name": "retrieval",
+  "tool_success": true,
+  "payload": {
+    "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+  },
+  "event": "response_sent",
+  "env": "dev",
+  "session_id": "s04",
+  "user_id_hash": "75af07890985",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "correlation_id": "req-de61fabc",
+  "level": "info",
+  "ts": "2026-09-29T07:51:05.688428Z"
+}

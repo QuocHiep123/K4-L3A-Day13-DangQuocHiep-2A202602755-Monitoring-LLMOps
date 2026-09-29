@@ -1,0 +1,54 @@
+=== DASHBOARD RUNTIME OVERVIEW (6/6 PANELS) ===
+Window: 60 minutes | Refresh: 30s | Source: data/logs.jsonl
+
+{
+  "latency": {
+    "p50": 152.0,
+    "p95": 670.5,
+    "p99": 1084.5,
+    "ttft_p95": 50.0,
+    "unit": "ms",
+    "threshold": 3000
+  },
+  "traffic": {
+    "count": 11,
+    "rate_per_minute": 0.18,
+    "unit": "requests_per_minute",
+    "threshold": 1
+  },
+  "errors": {
+    "error_rate_pct": 0.0,
+    "count_by_value": {},
+    "tool_success_rate_pct": 100.0,
+    "unit": "percent",
+    "threshold": 2
+  },
+  "cost": {
+    "total": 0.022,
+    "sum_by_minute": [
+      {
+        "minute": "2026-09-29T07:51",
+        "cost": 0.0206
+      },
+      {
+        "minute": "2026-09-29T07:56",
+        "cost": 0.0015
+      }
+    ],
+    "unit": "usd",
+    "threshold": 2.5
+  },
+  "tokens": {
+    "tokens_in": 369,
+    "tokens_out": 1396,
+    "sum_by_field": 1765,
+    "unit": "tokens",
+    "threshold": 50000
+  },
+  "quality": {
+    "mean": 0.882,
+    "unit": "score_0_to_1",
+    "threshold": 0.75
+  },
+  "time_range_minutes": 60
+}

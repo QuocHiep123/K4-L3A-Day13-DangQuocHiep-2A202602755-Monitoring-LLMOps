@@ -1,0 +1,57 @@
+=== TRACE METADATA (NO PII) ===
+Trace ID: 9e4a8e20c05cee4cc359f582f114c824
+
+Observation: None (GENERATION)
+{
+  "correlation_id": "req-f6b86686",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "scope.attributes.public_key": "pk-lf-8ff89df0-ed1b-4ca4-9926-ca26adc48687",
+  "scope.version": "4.15.6",
+  "scope.name": "langfuse-sdk",
+  "resourceAttributes.service.name": "unknown_service:python.exe",
+  "resourceAttributes.service.instance.id": "c9ea11e7-1b3e-447b-a2c3-c88ee41cd412",
+  "resourceAttributes.telemetry.sdk.version": "1.45.0",
+  "resourceAttributes.telemetry.sdk.name": "opentelemetry",
+  "resourceAttributes.telemetry.sdk.language": "python"
+}
+
+Observation: None (AGENT)
+{
+  "correlation_id": "req-f6b86686",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "prompt_fetch_error": "",
+  "prompt_source": "langfuse",
+  "prompt_version": 1,
+  "prompt_label": "production",
+  "prompt_name": "day13-chat",
+  "query_preview": "Explain prompt versioning",
+  "doc_count": 1,
+  "scope.attributes.public_key": "pk-lf-8ff89df0-ed1b-4ca4-9926-ca26adc48687",
+  "scope.version": "4.15.6",
+  "scope.name": "langfuse-sdk",
+  "resourceAttributes.service.name": "unknown_service:python.exe",
+  "resourceAttributes.service.instance.id": "c9ea11e7-1b3e-447b-a2c3-c88ee41cd412",
+  "resourceAttributes.telemetry.sdk.version": "1.45.0",
+  "resourceAttributes.telemetry.sdk.name": "opentelemetry",
+  "resourceAttributes.telemetry.sdk.language": "python"
+}
+
+Observation: None (RETRIEVER)
+{
+  "correlation_id": "req-f6b86686",
+  "model": "claude-sonnet-4-5",
+  "feature": "qa",
+  "query_preview": "Explain prompt versioning",
+  "doc_count": 1,
+  "scope.attributes.public_key": "pk-lf-8ff89df0-ed1b-4ca4-9926-ca26adc48687",
+  "scope.version": "4.15.6",
+  "scope.name": "langfuse-sdk",
+  "resourceAttributes.service.name": "unknown_service:python.exe",
+  "resourceAttributes.service.instance.id": "c9ea11e7-1b3e-447b-a2c3-c88ee41cd412",
+  "resourceAttributes.telemetry.sdk.version": "1.45.0",
+  "resourceAttributes.telemetry.sdk.name": "opentelemetry",
+  "resourceAttributes.telemetry.sdk.language": "python"
+}
+

@@ -1,0 +1,19 @@
+=== LANGFUSE MANAGED PROMPT VERSIONS ===
+Project: day13-k4-l3a-2A202602755
+Prompt Name: day13-chat
+
+--- Version 1 ---
+Labels: ['baseline', 'production']
+Template:
+Feature={{feature}}
+Docs={{docs}}
+Question={{message}}
+
+--- Version 2 ---
+Labels: ['candidate', 'latest']
+Template:
+Feature={{feature}}
+Docs={{docs}}
+Question={{message}}
+
+Provide a concise, direct answer based strictly on the retrieved context.

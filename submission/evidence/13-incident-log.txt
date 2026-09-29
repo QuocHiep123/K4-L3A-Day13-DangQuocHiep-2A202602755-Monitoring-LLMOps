@@ -1,0 +1,59 @@
+=== INCIDENT STRUCTURED LOGS ===
+Challenge ID: day13-k4-l3a-monitoring-llmops-v1
+Correlation ID: req-37f3fb5c
+Feature: monitoring
+Latency: 2652 ms (Threshold: 2000 ms)
+
+--- Target Request Log (request_received) ---
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "Describe how to prove a slow span is the root cause."
+  },
+  "event": "request_received",
+  "user_id_hash": "ed72e61117f6",
+  "session_id": "k4-l3a-challenge-s05",
+  "env": "dev",
+  "model": "claude-sonnet-4-5",
+  "correlation_id": "req-37f3fb5c",
+  "feature": "monitoring",
+  "level": "info",
+  "ts": "2026-09-29T09:30:06.364048Z"
+}
+
+--- Target Response Log (response_sent) ---
+{
+  "service": "api",
+  "latency_ms": 2652,
+  "ttft_ms": 50,
+  "tokens_in": 35,
+  "tokens_out": 147,
+  "cost_usd": 0.00231,
+  "quality_score": 0.8,
+  "tool_name": "retrieval",
+  "tool_success": true,
+  "payload": {
+    "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+  },
+  "event": "response_sent",
+  "user_id_hash": "ed72e61117f6",
+  "session_id": "k4-l3a-challenge-s05",
+  "env": "dev",
+  "model": "claude-sonnet-4-5",
+  "correlation_id": "req-37f3fb5c",
+  "feature": "monitoring",
+  "level": "info",
+  "ts": "2026-09-29T09:30:09.018351Z"
+}
+
+--- All Incident Logs for Cohort K4 Seed 1311 (5 requests) ---
+[2026-09-29T09:29:53.865410Z] cid=req-777e84cf event=request_received latency=Nonems feature=monitoring user=4570299f37e2
+[2026-09-29T09:29:58.386876Z] cid=req-777e84cf event=response_sent latency=3814ms feature=monitoring user=4570299f37e2
+[2026-09-29T09:29:58.390483Z] cid=req-44c808aa event=request_received latency=Nonems feature=monitoring user=dde2e75b20cf
+[2026-09-29T09:30:01.045363Z] cid=req-44c808aa event=response_sent latency=2653ms feature=monitoring user=dde2e75b20cf
+[2026-09-29T09:30:01.047720Z] cid=req-a2f92ad3 event=request_received latency=Nonems feature=monitoring user=aae0b94055a9
+[2026-09-29T09:30:03.702115Z] cid=req-a2f92ad3 event=response_sent latency=2652ms feature=monitoring user=aae0b94055a9
+[2026-09-29T09:30:03.705285Z] cid=req-80c44ad0 event=request_received latency=Nonems feature=monitoring user=dc9b2ec8da9d
+[2026-09-29T09:30:06.360208Z] cid=req-80c44ad0 event=response_sent latency=2652ms feature=monitoring user=dc9b2ec8da9d
+[2026-09-29T09:30:06.364048Z] cid=req-37f3fb5c event=request_received latency=Nonems feature=monitoring user=ed72e61117f6
+[2026-09-29T09:30:09.018351Z] cid=req-37f3fb5c event=response_sent latency=2652ms feature=monitoring user=ed72e61117f6

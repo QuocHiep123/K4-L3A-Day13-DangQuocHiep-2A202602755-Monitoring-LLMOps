@@ -1,0 +1,28 @@
+=== INCIDENT METRIC REPORT ===
+Challenge ID: day13-k4-l3a-monitoring-llmops-v1
+Cohort: K4
+Student: Đặng Quốc Hiệp (MSSV: 2A202602755)
+Incident Type: rag_slow
+Seed: 1311
+Affected Feature: monitoring
+
+--- Time Window ---
+Start Time: 2026-09-29T09:29:53Z (16:29:53 Local)
+End Time:   2026-09-29T09:30:10Z (16:30:10 Local)
+Duration:   ~17 seconds
+
+--- Metric Values (60-minute window) ---
+Total Incident Requests: 5
+Latency P50: 2652.0 ms
+Latency P95: 3581.8 ms  (CRITICAL VIOLATION - Threshold: 2000 ms, SLO: 3000 ms)
+Latency P99: 3767.6 ms
+Max Latency: 3814.0 ms
+TTFT P95:    50.0 ms    (Normal - proves bottleneck is in Retrieval, not Generation)
+Error Rate:  0.0%       (Requests succeeded but violated latency SLO)
+Retrieval Success: 100.0%
+
+--- Alert Evaluation ---
+Alert Name: HighLatencyP95
+Status: FIRING
+Condition: latency_p95_ms > 3000 ms for > 5m (Current: 3581.8 ms)
+Impact: 100% of queries for feature 'monitoring' breached the 2000ms challenge threshold.
